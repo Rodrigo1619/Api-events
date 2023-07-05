@@ -11,12 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class TopTrendApplication extends SpringBootServletInitializer {
+public class TopTrendApplication {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(TopTrendApplication.class);
-	}
 	public static void main(String[] args) {
 		SpringApplication.run(TopTrendApplication.class, args);
 	}
